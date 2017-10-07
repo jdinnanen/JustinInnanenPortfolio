@@ -1,0 +1,131 @@
+.projects {
+	display: none;
+	z-index: 6000;
+	position: absolute;
+	color: #000;
+	background-color: #fff;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+
+	.project_container {
+		-webkit-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		transition: all 1s ease;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		padding: 1rem;
+		height: 100%;
+		width: 50%;
+		margin-left: auto;
+		overflow: hidden;
+
+		.project_close {
+			-webkit-box-flex: 1;
+			    -ms-flex-positive: 1;
+			        flex-grow: 1;
+			max-height: 4rem;
+			button {
+				float: right;
+			}
+		}
+
+		.project_scroller {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+			height: 90%;
+			overflow-x: hidden;
+			overflow-y: auto;
+
+			.project_content { 
+				display: -webkit-box; 
+				display: -ms-flexbox; 
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+				min-height: 400px;
+				padding-bottom: 1rem;
+
+				.project_header {
+					margin-left: 1rem;
+					min-height: 2rem;
+					max-width: 85%;
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: flex;
+
+					.project_name {
+						max-height: 1.5rem;
+						-webkit-box-flex: 1;
+						    -ms-flex-positive: 1;
+						        flex-grow: 1;
+					}
+
+					.project_description {
+						max-height: 1.5rem;
+						-webkit-box-flex: 9;
+						    -ms-flex-positive: 9;
+						        flex-grow: 9;
+						padding-left: 1rem;
+					}
+				}
+
+				.project_preview {
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: flex;
+					width: 90%;
+					height: auto;
+					padding: 0 1rem 0 1rem;
+					overflow: hidden;
+
+					.project_writeup {
+						min-width: 50%;
+						max-width: 50%;
+						height: auto;
+						padding: 1rem;
+						p {
+
+						}
+						li {
+							font-family: $fontSecondary;
+							h2{
+								margin-top: 0;
+							}
+						}	
+					}
+					.project_screengrab{
+						padding: 1rem 0 0;
+						min-width: 50%;
+						a {
+							img {
+								width: 100%;
+								height: auto;
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+}
+hr.divider {
+	width: 100%;		
+	border: 0;
+	height: 1px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}

@@ -1,0 +1,158 @@
+#landing {
+	z-index: 9000;
+	position: absolute;
+	color: #fff;
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+	.mobile_branding {
+		display:none;
+		position: absolute;
+    	top: 50%;
+    	-webkit-transition: all .5s ease;
+    	-o-transition: all .5s ease;
+    	transition: all .5s ease;
+		color: #fff;
+		width: 100%;
+		height: auto;
+		text-align: center;
+		h1 {
+			font-family: $fontMain;
+			font-size: 2rem;
+		}
+
+	}
+	.branding_center{
+		position: absolute;
+    	top: 50%;
+    	left: 0;
+    	-webkit-transition: all .5s ease;
+    	-o-transition: all .5s ease;
+    	transition: all .5s ease;
+		color: #fff;
+		width: calc(100% - 2rem);
+		height: auto;
+		text-align: center;
+		font-family: $fontMain;
+		font-size: 2rem;
+		h1 {
+			font-size: 1.5rem;	
+		}
+	}
+}
+
+.pre_rremove {
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.pre_projects {
+	-webkit-transform-origin: 0% 50%;
+	    -ms-transform-origin: 0% 50%;
+	        transform-origin: 0% 50%;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transform: rotateY( 2deg);
+            transform: rotateY( 2deg);
+}
+
+.pre_about {
+	-webkit-transform-origin: 100% 50%;
+	    -ms-transform-origin: 100% 50%;
+	        transform-origin: 100% 50%;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transform: rotateY( -2deg);
+            transform: rotateY( -2deg);
+
+}
+
+.pre_contact {
+	-webkit-transform-origin: 50% 0%;
+	    -ms-transform-origin: 50% 0%;
+	        transform-origin: 50% 0%;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transform: rotateX( -2deg);
+            transform: rotateX( -2deg);
+}
+
+.open_projects {
+	width: 50% !important;
+	-webkit-transform-origin: 0% 50%;
+	    -ms-transform-origin: 0% 50%;
+	        transform-origin: 0% 50%;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform: rotateY( 10deg);
+            transform: rotateY( 10deg);
+}
+
+.open_about {
+	width: 50% !important;
+	right: 0;
+	-webkit-transform-origin: 100% 50%;
+	    -ms-transform-origin: 100% 50%;
+	        transform-origin: 100% 50%;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform: rotateY( -10deg);
+            transform: rotateY( -10deg);
+}
+
+.open_contact {
+	height: 75vh !important;
+	width: 100%;
+	-webkit-transform-origin: 50% 0%;
+	    -ms-transform-origin: 50% 0%;
+	        transform-origin: 50% 0%;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform: rotateX( -20deg);
+            transform: rotateX( -20deg);
+}
+
+.close_about {
+	width: 100% !important;
+	right:0;
+	-webkit-transform-origin: 100% 50%;
+	    -ms-transform-origin: 100% 50%;
+	        transform-origin: 100% 50%;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.contact_close {
+	height: 100vh !important;
+	width: 100%;
+	-webkit-transform-origin: 50% 0%;
+	    -ms-transform-origin: 50% 0%;
+	        transform-origin: 50% 0%;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    
+}
+
+.close_projects {
+	width: 100% !important;
+	-webkit-transform-origin: 0% 50%;
+	    -ms-transform-origin: 0% 50%;
+	        transform-origin: 0% 50%;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.active_content {
+	display: block !important;
+	z-index: 8000 !important;
+}

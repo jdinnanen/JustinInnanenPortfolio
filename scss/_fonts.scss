@@ -1,0 +1,30 @@
+$fontMain: 'Prosto One', cursive;
+$fontSecondary: 'Ubuntu', sans-serif;
+
+h1 {
+	font-size: 1rem;
+	pointer-events: none;
+	text-transform: uppercase;
+	font-family: $fontMain;
+}
+h2 {
+	font-size: .8rem;
+	font-family: $fontSecondary;
+}
+h3 {
+	font-size: .8rem;
+	font-family: $fontSecondary;
+}
+p {
+	font-family: $fontSecondary;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.faded {
+	opacity: .5;
+}
+.hidden {
+	display: none;
+}
