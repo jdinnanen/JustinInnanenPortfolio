@@ -17,10 +17,27 @@
 	.projects .project_container {
 		width: 70%
 	}
-	.contact .contact_container .contact_footer .footer_branding  {
+	.contact .contact_container .contact_footer {
+		.footer_branding  {
 		-webkit-box-flex: 2;
 		    -ms-flex: 2;
 		        flex: 2;
+		}
+		.footer_social {
+			ul {
+				li {
+					text-align: left;
+					a {
+						.fa {
+							margin-top: 25%;
+						}
+						h3 {
+							display: none;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 @media (max-width: 800px) {

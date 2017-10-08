@@ -1,10 +1,16 @@
-$fontMain: 'Prosto One', cursive;
+$fontSpecial: 'Permanent Marker', cursive;
+$fontMain: 'Ubuntu', sans-serif;
 $fontSecondary: 'Ubuntu', sans-serif;
+/*
+'Permanent Marker', cursive;
+'Ubuntu', sans-serif;
+*/
 
 h1 {
 	font-size: 1rem;
 	text-transform: uppercase;
 	font-family: $fontMain;
+	letter-spacing: 1px;
 }
 h2 {
 	font-size: .8rem;

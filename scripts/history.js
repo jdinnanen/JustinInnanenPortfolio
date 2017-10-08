@@ -30,25 +30,14 @@ function init(){
 
 	// POPSTATE HANDLING
 	$(window).on('popstate', function(e) {
-		const state = e.originalEvent.state;
-		const hash = state.hash;
-		const $el = $('a[href="' + hash + '"]');
-	});
-
-	//PAGE RELOAD HANDLING
-	$(window).on('unload', unloadPage());
-	function unloadPage(e){
 		if(window.location.hash){
-			console.log('test');
-			history.replaceState(null, '', '/');
 			landing_back();
+			console.log("back hash");
 		}else{
-			const hashDefault = $section.filter(':first').attr('href');
-			history.replaceState(null, '', '/');
-			landing();
-		}	
-	}
-
+			landing_back();
+			console.log("reload hash");
+		}		
+	});
 
 //LANDING PAGE STATE HANDLING FUNCTION
 function landing(){
@@ -69,9 +58,11 @@ function landing_back(){
 		contact_open();
 	}else {
 		if($('#landing').hasClass()){
-			$('#landing').removeClass();
+			console.log("reload hash class");
+			landing_close();
 		}else{
-			$('#landing').removeClass();
+			console.log("reload hash no-class");
+			landing_close();
 		}
 	}
 }
