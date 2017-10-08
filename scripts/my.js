@@ -249,7 +249,6 @@ $('.close_contact').click(
 
 // LANDING PAGE CLOSE FUNCTIONS
 
-
 function landing_close() {
   if ($('#landing').hasClass('open_about')){
         close_about();
@@ -261,13 +260,14 @@ function landing_close() {
 
   }
 }
-//NEED TO MAKE A TARGETABLE AREA
-// $('.desktop_nav').click(
-//   function(){
-//     landing_close();
-//   }
-// );
 
+//BRANDING CENTER CLOSE
+
+$('.branding_center').click(
+  function(){
+    landing_close();
+  }
+);
 
 //SWITCH TO MOBILE VIEW
 $(window).on('load, resize', function mobileViewUpdate() {

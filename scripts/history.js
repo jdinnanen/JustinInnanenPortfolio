@@ -1,6 +1,7 @@
 // SELECTORS
 const $section = $('.nav_flex button');
 const $close = $('.close_page');
+const $brand = $('.branding_center');
 
 //CALL INIT FUNCTION
 init();
@@ -23,6 +24,13 @@ function init(){
 
 	// CLICK EVENT FOR CLOSE PAGE BUTTONS
 	$close.on('click', function(e) {
+		e.preventDefault();
+		const $this = $(this);
+		history.pushState(null, '', "/");	
+	}); 
+	// CLICK EVENT FOR CLOSE PAGE BUTTONS
+	$brand.on('click', function(e) {
+		console.log('test');
 		e.preventDefault();
 		const $this = $(this);
 		history.pushState(null, '', "/");	
